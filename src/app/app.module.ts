@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ListComponent } from './list/list.component';
+import { IfComponent } from './if/if.component';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ListComponent } from './list/list.component';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    ListComponent
+    ListComponent,
+    IfComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule

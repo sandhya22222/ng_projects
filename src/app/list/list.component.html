@@ -1,3 +1,4 @@
+<app-if></app-if>
 
 <div class="row">
     <h2>This just loop over array</h2>
@@ -16,12 +17,12 @@
 <div class="row">
     <h2>This loop is Array of objects</h2>
     <div *ngFor="let myele of listItem" class="card col m-3">
+        <span *ngIf=" myele.title === 'Grapes'">Very Tasty</span>
         <img src="{{myele.image}}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{myele.title}}</h5>
             <p class="card-text">{{myele.content}}</p>
-            <a  target="_blank" href="{{myele.link}}" class="btn btn-primary">{{myele.btnText}}</a>
+            <a target="_blank" href="{{myele.link}}" class="btn btn-primary">{{myele.btnText}}</a>
         </div>
     </div>
 </div>
-
